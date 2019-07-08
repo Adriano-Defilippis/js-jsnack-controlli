@@ -15,14 +15,15 @@ while ( i < 6) {
   input = parseInt(prompt('Inserisci un valore'));
 
   // Variabile di controllo
-  controllo = true;
+  // controllo = true;
 
   // Controllo del tipo di input
-  if (isNaN(input) && controllo == true) {
+  if (isNaN(input)) {
     alert('non hai inserito un valore numerico');
-    // input = parseInt(prompt('Inserisci un valore'));
-    controllo = false;
 
+    // input = parseInt(prompt('Inserisci un valore'));
+    // controllo = false;
+    
     // Questa variabile mi garantisce di iterare il coclo fino a quando controllo diventa = true
     continue;
   }
